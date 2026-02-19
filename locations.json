@@ -1,88 +1,88 @@
 [
   {
-    "coords": [41.652226527974804, -93.5083161846587],
+    "coords": [41.6522, -93.5083],
     "address": "REMAX Concepts Altoona",
     "link": "https://concepts-altoona-ia.remax.com/agents.php"
   },
   {
-    "coords": [42.04923704263008, -93.64466655925332],
+    "coords": [42.0492, -93.6446],
     "address": "REMAX Concepts Ames",
     "link": "https://concepts-ames-ia.remax.com/agents.php"
   }
  {
-    "coords": [41.567200040165325, -90.51667471745834],
+    "coords": [41.5672, -90.5166],
     "address": "REMAX Concepts Bettendorf",
     "link": "https://concepts-bettendorf-ia.remax.com/agents.php"
   } {
-    "coords": [41.700922643131705, -93.46287250210919],
+    "coords": [41.7009, -93.4628],
     "address": "REMAX Concepts Bondurant",
     "link": "https://concepts-bondurant-ia.remax.com/agents.php"
   } {
-    "coords": [42.50835483461053, -92.4149917174026],
+    "coords": [42.5083, -92.4149],
     "address": "REMAX Concepts Cedar Falls",
     "link": "https://concepts-cedar-falls-ia.remax.com/agents.php"
   } {
-    "coords": [42.032223728474214, -91.70353836160753],
+    "coords": [42.0322, -91.7035],
     "address": "REMAX Concepts Cedar Rapids",
     "link": "https://concepts-cedar-rapids-ia.remax.com/agents.php"
   } {
-    "coords": [41.88226256422623, -93.6017834174398],
+    "coords": [41.8822, -93.6017],
     "address": "REMAX Concepts Huxley",
     "link": "https://concepts-huxley-ia.remax.com/agents.php"
   } {
-    "coords": [41.673801847886104, -93.69739166347588],
+    "coords": [41.6738, -93.6973],
     "address": "REMAX Concepts Johnston",
     "link": "https://concepts-johnston-ia.remax.com/agents.php"
   } {
-    "coords": [41.579773379677185, -93.85520298862225],
+    "coords": [41.5797, -93.8552],
     "address": "REMAX Concepts Keetown",
     "link": "https://concepts-davenport-ia.remax.com/agents.php"
   } {
-    "coords": [41.4719566273655, -90.52495984814645],
+    "coords": [41.4719, -90.5249],
     "address": "REMAX Concepts Moline",
     "link": "https://concepts-moline-il.remax.com/agents.php"
   } {
-    "coords": [42.022472146959956, -93.45265904811407],
+    "coords": [42.0224, -93.4526],
     "address": "REMAX Concepts Nevada",
     "link": "https://concepts-nevada-ia.remax.com/agents.php"
   } {
-    "coords": [41.70087844904024, -93.05460629046243],
+    "coords": [41.7008, -93.0546],
     "address": "REMAX Concepts Newton",
     "link": "https://concepts-newton-ia.remax.com/agents.php"
   } {
-    "coords": [41.765081122848585, -93.7217110346352],
+    "coords": [41.7650, -93.7217],
     "address": "REMAX Concepts Polk City",
     "link": "https://concepts-polk-city-ia.remax.com/agents.php"
   } {
-    "coords": [41.714810145727355, -93.61787023094372],
+    "coords": [41.7148, -93.6178],
     "address": "REMAX Concepts Prairie Trail",
     "link": "https://concepts-ankeny-ia.remax.com/agents.php"
   } {
-    "coords": [41.77041121249362, -91.12935781744638],
+    "coords": [41.7704, -91.1293],
     "address": "REMAX Concepts Tipton",
     "link": "https://concepts-tipton-ia.remax.com/agents.php"
   } {
-    "coords": [41.5909256540944, -93.80598676348076],
+    "coords": [41.5909, -93.8059],
     "address": "REMAX Concepts Vista",
     "link": "https://concepts-west-des-moines-ia.remax.com/agents.php"
   } {
-    "coords": [42.49703480248049, -92.3429964174033],
+    "coords": [42.4970, -92.3429],
     "address": "REMAX Concepts Waterloo",
     "link": "https://concepts-waterloo-ia.remax.com/agents.php"
   } {
-    "coords": [41.6164786744541, -93.85808816163207],
+    "coords": [41.6164, -93.8580],
     "address": "REMAX Concepts Waukee",
     "link": "https://concepts-waukee-ia.remax.com/agents.php"
   } {
-    "coords": [42.72548848373365, -92.48424221923685],
+    "coords": [42.7254, -92.4842],
     "address": "REMAX Concepts Waverly",
     "link": "https://concepts-waverly-ia.remax.com/agents.php"
   } {
-    "coords": [41.60021023903054, -93.70953143279772],
+    "coords": [41.6002, -93.7095],
     "address": "REMAX Concepts Windsor Heights",
     "link": "https://concepts-university-ave-des-moines-ia.remax.com/agents.php"
   } {
-    "coords": [27.732026637209067, -82.74424111815216],
+    "coords": [27.7320, -82.7442],
     "address": "REMAX Preferred St. Pete",
     "link": "https://preferred-st-pete-beach-fl.remax.com/agents.php"
   } 
