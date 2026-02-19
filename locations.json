@@ -1,107 +1,128 @@
 [
   {
     "coords": [41.6522, -93.5083],
-    "address": "REMAX Concepts Altoona",
+    "office": "REMAX Concepts Altoona",
+    "address": "3880 Prairie Fire NW, Altoona, IA 50009",
     "link": "https://concepts-altoona-ia.remax.com/agents.php"
   },
   {
     "coords": [42.0492, -93.6446],
-    "address": "REMAX Concepts Ames",
+     "office": "REMAX Concepts Ames",
+    "address": "2704 Stange Rd, Ames, IA 50010",
     "link": "https://concepts-ames-ia.remax.com/agents.php"
   },
  {
     "coords": [41.5672, -90.5166],
-    "address": "REMAX Concepts Bettendorf",
+     "office": "REMAX Concepts Bettendorf",
+    "address": "4555 Utica Ridge Rd, Bettendorf, IA 52722",
     "link": "https://concepts-bettendorf-ia.remax.com/agents.php"
   },
   {
     "coords": [41.7009, -93.4628],
-    "address": "REMAX Concepts Bondurant",
+     "office": "REMAX Concepts Bondurant",
+    "address": "102 1st St SE, Bondurant, IA 50035",
     "link": "https://concepts-bondurant-ia.remax.com/agents.php"
   },
   {
     "coords": [42.5083, -92.4149],
-    "address": "REMAX Concepts Cedar Falls",
+     "office": "REMAX Concepts Cedar Falls",
+    "address": "4800 University Ave Cedar Falls, IA 50613",
     "link": "https://concepts-cedar-falls-ia.remax.com/agents.php"
   },
   {
     "coords": [42.0322, -91.7035],
-    "address": "REMAX Concepts Cedar Rapids",
+     "office": "REMAX Concepts Cedar Rapids",
+    "address": "5235 Buffalo Rdg Dr #116, Cedar Rapids, IA 52411",
     "link": "https://concepts-cedar-rapids-ia.remax.com/agents.php"
   },
   {
     "coords": [41.8822, -93.6017],
-    "address": "REMAX Concepts Huxley",
+     "office": "REMAX Concepts Huxley",
+    "address": "406 Anthem Dr, Huxley, IA 50124",
     "link": "https://concepts-huxley-ia.remax.com/agents.php"
   },
   {
     "coords": [41.6738, -93.6973],
-    "address": "REMAX Concepts Johnston",
+     "office": "REMAX Concepts Johnston",
+    "address": "6205 Merle Hay Rd Suite 120, Johnston, IA 50131",
     "link": "https://concepts-johnston-ia.remax.com/agents.php"
   },
   {
     "coords": [41.5797, -93.8552],
-    "address": "REMAX Concepts Keetown",
+     "office": "REMAX Concepts Keetown",
+    "address": "2940 Grand Prairie Pkwy, Waukee, IA 50263",
     "link": "https://concepts-davenport-ia.remax.com/agents.php"
   },
   {
     "coords": [41.4719, -90.5249],
-    "address": "REMAX Concepts Moline",
+     "office": "REMAX Concepts Moline",
+    "address": "900 36th Ave, Moline, IL 61265",
     "link": "https://concepts-moline-il.remax.com/agents.php"
   },
   {
     "coords": [42.0224, -93.4526],
-    "address": "REMAX Concepts Nevada",
+     "office": "REMAX Concepts Nevada",
+    "address": "1124 6th St, Nevada, IA 50201",
     "link": "https://concepts-nevada-ia.remax.com/agents.php"
   },
   {
     "coords": [41.7008, -93.0546],
-    "address": "REMAX Concepts Newton",
+     "office": "REMAX Concepts Newton",
+    "address": "120 N 2nd Ave W, Newton, IA 50208",
     "link": "https://concepts-newton-ia.remax.com/agents.php"
   },
   {
     "coords": [41.7650, -93.7217],
-    "address": "REMAX Concepts Polk City",
+     "office": "REMAX Concepts Polk City",
+    "address": "905 W Bridge Rd #2, Polk City, IA 50226",
     "link": "https://concepts-polk-city-ia.remax.com/agents.php"
   },
   {
     "coords": [41.7148, -93.6178],
-    "address": "REMAX Concepts Prairie Trail",
+     "office": "REMAX Concepts Prairie Trail",
+    "address": "1535 SW Market St Suite 300, Ankeny, IA 50023",
     "link": "https://concepts-ankeny-ia.remax.com/agents.php"
   },
   {
     "coords": [41.7704, -91.1293],
-    "address": "REMAX Concepts Tipton",
+     "office": "REMAX Concepts Tipton",
+    "address": "120 W 5th St, Tipton, IA 52772",
     "link": "https://concepts-tipton-ia.remax.com/agents.php"
   },
   {
     "coords": [41.5909, -93.8059],
-    "address": "REMAX Concepts Vista",
+     "office": "REMAX Concepts Vista",
+    "address": "7101 Vista Dr, West Des Moines, IA 50266",
     "link": "https://concepts-west-des-moines-ia.remax.com/agents.php"
   },
   {
     "coords": [42.4970, -92.3429],
-    "address": "REMAX Concepts Waterloo",
+     "office": "REMAX Concepts Waterloo",
+    "address": "302 Commercial St Ste A, Waterloo, IA 50701",
     "link": "https://concepts-waterloo-ia.remax.com/agents.php"
   },
   {
     "coords": [41.6164, -93.8580],
-    "address": "REMAX Concepts Waukee",
+     "office": "REMAX Concepts Waukee",
+    "address": "661 NE Venture Dr, Waukee, IA 50263",
     "link": "https://concepts-waukee-ia.remax.com/agents.php"
   },
   {
     "coords": [42.7254, -92.4842],
-    "address": "REMAX Concepts Waverly",
+     "office": "REMAX Concepts Waverly",
+    "address": "1101 W Bremer Ave, Waverly, IA 50677",
     "link": "https://concepts-waverly-ia.remax.com/agents.php"
   },
   {
     "coords": [41.6002, -93.7095],
-    "address": "REMAX Concepts Windsor Heights",
+     "office": "REMAX Concepts Windsor Heights",
+    "address": "6600 University Ave Des Moines Iowa 50324",
     "link": "https://concepts-university-ave-des-moines-ia.remax.com/agents.php"
   },
   {
     "coords": [27.7320, -82.7442],
-    "address": "REMAX Preferred St. Pete",
+     "office": "REMAX Preferred St. Pete",
+    "address": "5801 Gulf Blvd, St Pete Beach, FL 33706",
     "link": "https://preferred-st-pete-beach-fl.remax.com/agents.php"
   } 
 ]
