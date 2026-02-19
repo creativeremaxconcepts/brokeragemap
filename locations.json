@@ -1,0 +1,12 @@
+[
+  {
+    "coords": [41.5868, -93.6250],
+    "address": "123 Main St, Des Moines, IA",
+    "link": "https://yourwebsite.com/des-moines"
+  },
+  {
+    "coords": [29.9511, -90.0715],
+    "address": "456 Elm St, New Orleans, LA",
+    "link": "https://yourwebsite.com/new-orleans"
+  }
+]
