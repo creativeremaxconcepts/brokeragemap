@@ -58,7 +58,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 // Custom marker icon
 var customIcon = L.icon({
-  iconUrl: 'https://raw.githubusercontent.com/creativeremaxconcepts/brokeragemap/refs/heads/main/Balloon_Mark_cmyk.png', // ← REPLACE THIS
+  iconUrl: 'https://yourdomain.com/custom-marker.png', // ← REPLACE THIS
   iconSize: [40, 40]
 });
 
@@ -68,3 +68,30 @@ fetch('locations.json')
   .then(locations => {
 
     var bounds = [];
+
+    locations.forEach(function(location) {
+
+      var marker = L.marker(location.coords, { icon: customIcon })
+        .addTo(map)
+        .bindPopup(
+          "<strong>" + location.address + "</strong><br>" +
+          "<a class='popup-link' href='" + location.link + "' target='_blank'>" +
+          "View Realtors →</a>"
+        );
+
+      bounds.push(location.coords);
+    });
+
+    if (bounds.length > 0) {
+      map.fitBounds(bounds);
+    }
+
+  })
+  .catch(error => {
+    console.error("Error loading locations:", error);
+  });
+
+</script>
+
+</body>
+</html>
