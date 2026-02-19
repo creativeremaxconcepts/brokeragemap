@@ -39,6 +39,11 @@ body {
 .popup-link:hover {
   text-decoration: underline;
 }
+
+.popup-office {
+  font-weight: bold;
+  margin-bottom: 2px;
+}
 </style>
 </head>
 
@@ -77,7 +82,7 @@ fetch('locations.json')
   .then(locations => {
 
     var bounds = [];
-    var activeMarker = null; // keep track of currently “popped” marker
+    var activeMarker = null; // track current “popped” marker
 
     locations.forEach(function(location) {
 
@@ -85,20 +90,44 @@ fetch('locations.json')
       var marker = L.marker(location.coords, { icon: createIcon() })
         .addTo(map)
         .bindPopup(
-          "<strong>" + location.address + "</strong><br>" +
+          "<div class='popup-office'>" + location.office + "</div>" +
+          "<div>" + location.address + "</div>" + // address on a second line
           "<a class='popup-link' href='" + location.link + "' target='_blank' onclick='event.stopPropagation();'>" +
           "View Realtors →</a>"
         );
 
-      // Marker click effect: enlarge icon
+      // Marker click effect: bounce/pop animation & center map
       marker.on('click', function() {
-        // Reset previous active marker if any
+        // Reset previous active marker
         if (activeMarker && activeMarker !== marker) {
           activeMarker.setIcon(createIcon(40));
         }
-        // Enlarge this marker
-        marker.setIcon(createIcon(50));
         activeMarker = marker;
+
+        // Center map over clicked marker
+        map.panTo(location.coords, { animate: true });
+
+        // Bounce/pop animation
+        var size = 40;
+        var maxSize = 55;
+        var step = 3;
+        var interval = setInterval(() => {
+          if (size < maxSize) {
+            size += step;
+            marker.setIcon(createIcon(size));
+          } else {
+            clearInterval(interval);
+            // shrink back smoothly
+            var shrinkInterval = setInterval(() => {
+              if (size > 50) {
+                size -= 1;
+                marker.setIcon(createIcon(size));
+              } else {
+                clearInterval(shrinkInterval);
+              }
+            }, 15);
+          }
+        }, 15);
       });
 
       bounds.push(location.coords);
