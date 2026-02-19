@@ -56,12 +56,12 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
 
-// Corrected custom marker icon
+// Custom marker icon
 var customIcon = L.icon({
-  iconUrl: "balloon.png",  // remove extra "iconUrl: "
+  iconUrl: "Balloon_Mark_cmyk.png",  // your file name
   iconSize: [40, 40],
-  iconAnchor: [20, 40],    // optional, so popup points at the tip
-  popupAnchor: [0, -40]    // optional, so popup opens above icon
+  iconAnchor: [20, 40],
+  popupAnchor: [0, -40]
 });
 
 // Load locations from JSON file
@@ -78,20 +78,26 @@ fetch('locations.json')
 
     locations.forEach(function(location) {
 
-      // Make sure your JSON has coords in [lat, lng] format
+      // Create marker
       var marker = L.marker(location.coords, { icon: customIcon })
         .addTo(map)
         .bindPopup(
           "<strong>" + location.address + "</strong><br>" +
-          "<a class='popup-link' href='" + location.link + "' target='_blank'>" +
+          "<a class='popup-link' href='" + location.link + "' target='_blank' onclick='event.stopPropagation();'>" +
           "View Realtors →</a>"
         );
+
+      // Zoom in when marker is clicked
+      marker.on('click', function() {
+        map.setView(location.coords, 14, { animate: true });
+      });
 
       bounds.push(location.coords);
     });
 
+    // Fit map to all markers
     if (bounds.length > 0) {
-      map.fitBounds(bounds);
+      map.fitBounds(bounds, { padding: [50, 50] });
     }
 
   })
