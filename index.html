@@ -48,7 +48,7 @@ body {
 
 <script>
 
-// Create map (temporary center — will auto-fit)
+// Create map (temporary center — will auto-fit later)
 var map = L.map('map').setView([39.5, -98.35], 4);
 
 // Add OpenStreetMap tiles
@@ -56,21 +56,29 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
 
-// Custom marker icon
+// Corrected custom marker icon
 var customIcon = L.icon({
-  iconUrl: "iconUrl: "balloon.png",
-  iconSize: [40, 40]
+  iconUrl: "balloon.png",  // remove extra "iconUrl: "
+  iconSize: [40, 40],
+  iconAnchor: [20, 40],    // optional, so popup points at the tip
+  popupAnchor: [0, -40]    // optional, so popup opens above icon
 });
 
 // Load locations from JSON file
 fetch('locations.json')
-  .then(response => response.json())
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("HTTP error " + response.status);
+    }
+    return response.json();
+  })
   .then(locations => {
 
     var bounds = [];
 
     locations.forEach(function(location) {
 
+      // Make sure your JSON has coords in [lat, lng] format
       var marker = L.marker(location.coords, { icon: customIcon })
         .addTo(map)
         .bindPopup(
@@ -95,6 +103,3 @@ fetch('locations.json')
 
 </body>
 </html>
-
-
-
