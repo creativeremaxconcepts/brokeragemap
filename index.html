@@ -56,13 +56,15 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
 
-// Custom marker icon
-var customIcon = L.icon({
-  iconUrl: "Balloon_Mark_cmyk.png",  // your file name
-  iconSize: [40, 40],
-  iconAnchor: [20, 40],
-  popupAnchor: [0, -40]
-});
+// Function to create a marker icon of given size
+function createIcon(size = 40) {
+  return L.icon({
+    iconUrl: "Balloon_Mark_cmyk.png",
+    iconSize: [size, size],
+    iconAnchor: [size/2, size],  // bottom-center anchor
+    popupAnchor: [0, -size]      // popup above icon
+  });
+}
 
 // Load locations from JSON file
 fetch('locations.json')
@@ -75,11 +77,12 @@ fetch('locations.json')
   .then(locations => {
 
     var bounds = [];
+    var activeMarker = null; // keep track of currently “popped” marker
 
     locations.forEach(function(location) {
 
       // Create marker
-      var marker = L.marker(location.coords, { icon: customIcon })
+      var marker = L.marker(location.coords, { icon: createIcon() })
         .addTo(map)
         .bindPopup(
           "<strong>" + location.address + "</strong><br>" +
@@ -87,9 +90,15 @@ fetch('locations.json')
           "View Realtors →</a>"
         );
 
-      // Zoom in when marker is clicked
+      // Marker click effect: enlarge icon
       marker.on('click', function() {
-        map.setView(location.coords, 14, { animate: true });
+        // Reset previous active marker if any
+        if (activeMarker && activeMarker !== marker) {
+          activeMarker.setIcon(createIcon(40));
+        }
+        // Enlarge this marker
+        marker.setIcon(createIcon(50));
+        activeMarker = marker;
       });
 
       bounds.push(location.coords);
