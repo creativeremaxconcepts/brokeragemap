@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Brokerage Office Map</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<style>
+body {
+  margin: 0;
+}
+
+#map {
+  height: 100vh;
+  width: 100%;
+}
+
+.leaflet-popup-content {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.popup-link {
+  display: inline-block;
+  margin-top: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0054a6;
+}
+
+.popup-link:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+
+<div id="map"></div>
+
+<script>
+
+// Create map (temporary center — will auto-fit)
+var map = L.map('map').setView([39.5, -98.35], 4);
+
+// Add OpenStreetMap tiles
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
+
+// Custom marker icon
+var customIcon = L.icon({
+  iconUrl: 'https://raw.githubusercontent.com/creativeremaxconcepts/brokeragemap/refs/heads/main/Balloon_Mark_cmyk.png', // ← REPLACE THIS
+  iconSize: [40, 40]
+});
+
+// Load locations from JSON file
+fetch('locations.json')
+  .then(response => response.json())
+  .then(locations => {
+
+    var bounds = [];
