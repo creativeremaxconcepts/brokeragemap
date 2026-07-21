@@ -95,12 +95,7 @@
     "address": "7101 Vista Dr, West Des Moines, IA 50266",
     "link": "https://concepts-west-des-moines-ia.remax.com/agents.php"
   },
-  {
-    "coords": [42.4970, -92.3429],
-     "office": "REMAX Concepts Waterloo",
-    "address": "302 Commercial St Ste A, Waterloo, IA 50701",
-    "link": "https://concepts-waterloo-ia.remax.com/agents.php"
-  },
+ 
   {
     "coords": [41.6164, -93.8580],
      "office": "REMAX Concepts Waukee",
