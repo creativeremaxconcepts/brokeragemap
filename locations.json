@@ -115,6 +115,18 @@
     "link": "https://concepts-university-ave-des-moines-ia.remax.com/agents.php"
   },
   {
+    "coords": [43.3720, -95.1250],
+     "office": "REMAX Lakes Realty",
+    "address": "272 Hwy 71 N Arnolds Park Iowa 51331",
+    "link": "https://www.sellboji.com/local-experts"
+  },
+    {
+    "coords": [42.4940, -96.4012],
+     "office": "REMAX Experience",
+    "address": "712 4th St. Sioux City Iowa 51101",
+    "link": "https://www.sellsiouxcity.com/contact-us"
+  },
+  {
     "coords": [27.7320, -82.7442],
      "office": "REMAX Preferred St. Pete",
     "address": "5801 Gulf Blvd, St Pete Beach, FL 33706",
